@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseX | Track Every Beat</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-white">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+
+      <!-- Brand -->
+      <a href="#home" class="text-2xl font-extrabold text-cyan-400">
+        Pulse<span class="text-white">X</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-8 text-slate-300">
+        <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+        <li><a href="#features" class="hover:text-cyan-400 transition">Features</a></li>
+        <li><a href="#benefits" class="hover:text-cyan-400 transition">Benefits</a></li>
+        <li><a href="#reviews" class="hover:text-cyan-400 transition">Reviews</a></li>
+        <li><a href="#pricing" class="hover:text-cyan-400 transition">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+      </ul>
+
+      <!-- Desktop button -->
+      <a href="#pricing"
+         class="hidden md:inline-block bg-orange-500 hover:bg-orange-600 px-5 py-2 rounded-full font-semibold transition">
+        Buy Now
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">
+        &#9776;
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <ul id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-6 pb-6 text-slate-300">
+      <li><a href="#home" class="block hover:text-cyan-400">Home</a></li>
+      <li><a href="#features" class="block hover:text-cyan-400">Features</a></li>
+      <li><a href="#benefits" class="block hover:text-cyan-400">Benefits</a></li>
+      <li><a href="#reviews" class="block hover:text-cyan-400">Reviews</a></li>
+      <li><a href="#pricing" class="block hover:text-cyan-400">Pricing</a></li>
+      <li><a href="#contact" class="block hover:text-cyan-400">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero-bg">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Text -->
+      <div class="text-center md:text-left">
+        <p class="text-cyan-400 font-semibold tracking-widest uppercase mb-3">
+          Track Every Beat. Live Every Moment.
+        </p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          Meet PulseX: Your Smartest Health Companion
+        </h1>
+        <p class="mt-6 text-slate-300 text-lg">
+          PulseX is an advanced smartwatch that tracks your heart rate, sleep and fitness 24/7,
+          with a 7-day battery, AMOLED display and a stylish design.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#pricing"
+             class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold text-center transition">
+            Buy Now
+          </a>
+          <a href="#features"
+             class="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3 rounded-full font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="images/hero.jpg" alt="PulseX smartwatch"
+             class="w-full max-w-md rounded-3xl shadow-2xl hero-img">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+  <!-- ================= FEATURES ================= -->
+  <section id="features" class="bg-slate-900">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
+      <!-- Section heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-cyan-400 font-semibold tracking-widest uppercase mb-2">Features</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Everything You Need on Your Wrist</h2>
+        <p class="mt-4 text-slate-400">
+          PulseX packs powerful health and fitness tools into one stylish smartwatch.
+        </p>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+
+        <!-- Card 1 -->
+        <div class="feature-card lg:col-span-2">
+          <div class="feature-icon">❤️</div>
+          <h3 class="text-xl font-bold mb-2">Heart Rate Monitoring</h3>
+          <p class="text-slate-400">24/7 real-time heart rate tracking to keep you in the zone.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card lg:col-span-2">
+          <div class="feature-icon">😴</div>
+          <h3 class="text-xl font-bold mb-2">Sleep Tracking</h3>
+          <p class="text-slate-400">Detailed analysis of your deep, light and REM sleep every night.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card lg:col-span-2">
+          <div class="feature-icon">🔋</div>
+          <h3 class="text-xl font-bold mb-2">7-Day Battery</h3>
+          <p class="text-slate-400">One charge gives you a full week of power. No daily charging tension.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card lg:col-span-2 lg:col-start-2">
+          <div class="feature-icon">📍</div>
+          <h3 class="text-xl font-bold mb-2">GPS + Fitness Modes</h3>
+          <p class="text-slate-400">Running, cycling, swimming and 20+ sports modes built in.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card sm:col-span-2 lg:col-span-2">
+          <div class="feature-icon">💧</div>
+          <h3 class="text-xl font-bold mb-2">Water Resistant</h3>
+          <p class="text-slate-400">5 ATM rating, safe for swimming and heavy rain.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+     <!-- ================= BENEFITS ================= -->
+  <section id="benefits" class="benefits-bg">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="images/benefits.jpg" alt="Person using PulseX smartwatch while exercising"
+             class="w-full max-w-md rounded-3xl shadow-2xl benefits-img">
+      </div>
+
+      <!-- Text -->
+      <div>
+        <p class="text-cyan-400 font-semibold tracking-widest uppercase mb-2">Benefits</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+          Why You'll Love Wearing PulseX
+        </h2>
+        <p class="mt-4 text-slate-400">
+          PulseX is not just a watch. It helps you build healthier habits every single day.
+        </p>
+
+        <ul class="mt-8 space-y-6">
+
+          <li class="flex items-start gap-4">
+            <span class="benefit-icon">✔</span>
+            <div>
+              <h3 class="text-lg font-bold">Healthier Life</h3>
+              <p class="text-slate-400">Daily health insights help you understand and improve your fitness.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="benefit-icon">✔</span>
+            <div>
+              <h3 class="text-lg font-bold">Stay Connected</h3>
+              <p class="text-slate-400">Calls, messages and notifications right on your wrist.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="benefit-icon">✔</span>
+            <div>
+              <h3 class="text-lg font-bold">Long-Lasting Power</h3>
+              <p class="text-slate-400">No more daily charging. One charge easily lasts a full week.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-4">
+            <span class="benefit-icon">✔</span>
+            <div>
+              <h3 class="text-lg font-bold">Affordable Premium</h3>
+              <p class="text-slate-400">Premium features at a budget-friendly price.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+    <!-- ================= TESTIMONIALS ================= -->
+  <section id="reviews" class="bg-slate-900">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
+      <!-- Section heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-cyan-400 font-semibold tracking-widest uppercase mb-2">Reviews</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Loved by Thousands of Users</h2>
+        <p class="mt-4 text-slate-400">
+          Here is what our happy customers have to say about PulseX.
+        </p>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="text-orange-400 text-xl mb-4">★★★★★</div>
+          <p class="text-slate-300 mb-6">
+            "Battery life is amazing. It has been a week and I have not charged it yet!"
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="images/user1.jpg" alt="Rohan Sharma"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+            <div>
+              <h3 class="font-bold">Rohan Sharma</h3>
+              <p class="text-sm text-slate-400">Pune</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="text-orange-400 text-xl mb-4">★★★★★</div>
+          <p class="text-slate-300 mb-6">
+            "The sleep tracking is so accurate that it completely changed my daily routine."
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="images/user2.jpg" alt="Priya Patil"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+            <div>
+              <h3 class="font-bold">Priya Patil</h3>
+              <p class="text-sm text-slate-400">Mumbai</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="text-orange-400 text-xl mb-4">★★★★☆</div>
+          <p class="text-slate-300 mb-6">
+            "Perfect for both gym and running. The display is also really bright."
+          </p>
+          <div class="flex items-center gap-4">
+            <img src="images/user3.jpg" alt="Aman Verma"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
+            <div>
+              <h3 class="font-bold">Aman Verma</h3>
+              <p class="text-sm text-slate-400">Delhi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <!-- ================= PRICING ================= -->
+  <section id="pricing" class="benefits-bg">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
+      <!-- Section heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-cyan-400 font-semibold tracking-widest uppercase mb-2">Pricing</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Choose Your PulseX</h2>
+        <p class="mt-4 text-slate-400">
+          Simple pricing. Pick the plan that fits your lifestyle.
+        </p>
+      </div>
+
+      <!-- Pricing cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+        <!-- Lite -->
+        <div class="price-card">
+          <h3 class="text-xl font-bold">PulseX Lite</h3>
+          <p class="text-4xl font-extrabold mt-4">₹2,999</p>
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li>✓ Heart rate monitoring</li>
+            <li>✓ Sleep tracking</li>
+            <li>✓ 5-day battery</li>
+          </ul>
+          <a href="#contact"
+             class="mt-8 block text-center border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 py-3 rounded-full font-semibold transition">
+            Choose Lite
+          </a>
+        </div>
+
+        <!-- Pro (Most Popular) -->
+        <div class="price-card price-card-popular relative">
+          <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-sm font-bold px-4 py-1 rounded-full">
+            Most Popular
+          </span>
+          <h3 class="text-xl font-bold">PulseX Pro</h3>
+          <p class="text-4xl font-extrabold mt-4">₹4,999</p>
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li>✓ Everything in Lite</li>
+            <li>✓ GPS tracking</li>
+            <li>✓ 20+ sports modes</li>
+            <li>✓ 7-day battery</li>
+          </ul>
+          <a href="#contact"
+             class="mt-8 block text-center bg-orange-500 hover:bg-orange-600 py-3 rounded-full font-semibold transition">
+            Choose Pro
+          </a>
+        </div>
+
+        <!-- Ultra -->
+        <div class="price-card">
+          <h3 class="text-xl font-bold">PulseX Ultra</h3>
+          <p class="text-4xl font-extrabold mt-4">₹7,999</p>
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li>✓ Everything in Pro</li>
+            <li>✓ AMOLED display</li>
+            <li>✓ ECG monitoring</li>
+            <li>✓ Premium metal strap</li>
+          </ul>
+          <a href="#contact"
+             class="mt-8 block text-center border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 py-3 rounded-full font-semibold transition">
+            Choose Ultra
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="cta-bg">
+    <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Ready to Track Every Beat?</h2>
+      <p class="mt-4 text-slate-200 text-lg">
+        Join thousands of happy users and start your fitness journey with PulseX today.
+      </p>
+      <a href="#contact"
+         class="inline-block mt-8 bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-full text-lg font-bold transition">
+        Get Your PulseX Today
+      </a>
+    </div>
+  </section>
+    <!-- ================= FOOTER ================= -->
+  <footer id="contact" class="bg-slate-950 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Brand -->
+      <div>
+        <a href="#home" class="text-2xl font-extrabold text-cyan-400">
+          Pulse<span class="text-white">X</span>
+        </a>
+        <p class="mt-4 text-slate-400">
+          Track Every Beat. Live Every Moment. Your smartest health companion on your wrist.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+          <li><a href="#features" class="hover:text-cyan-400 transition">Features</a></li>
+          <li><a href="#benefits" class="hover:text-cyan-400 transition">Benefits</a></li>
+          <li><a href="#reviews" class="hover:text-cyan-400 transition">Reviews</a></li>
+          <li><a href="#pricing" class="hover:text-cyan-400 transition">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact + Social -->
+      <div>
+        <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+        <ul class="space-y-2 text-slate-400">
+          <li>📧 support@pulsex.com</li>
+          <li>📞 +91 98765 43210</li>
+          <li>📍 Pune, Maharashtra, India</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-3 mt-6">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">X</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-500">
+        <p>© 2026 PulseX. All rights reserved.</p>
+        <p>Made with Tailwind CSS</p>
+      </div>
+    </div>
+  </footer>
